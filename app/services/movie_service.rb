@@ -40,6 +40,4 @@ class MovieService
     response = connection.get("movie/#{movie_id}/credits")
     parse_json(response)[:cast]
   end
-
-  
 end

@@ -14,6 +14,6 @@ RSpec.describe 'discover movies page' do
   it 'has a form to fill in keywords and search by movie title' do
     fill_in :keywords, with: "Shawsha"
     click_button("Search Movie by Title")
-    expect(current_path).to eq("/users/#{@user1.id}/movies")
+    expect(current_path).to eq("/users/#{@user1.id}/movies/search")
   end
 end
