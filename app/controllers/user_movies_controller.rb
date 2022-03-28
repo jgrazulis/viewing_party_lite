@@ -10,12 +10,11 @@ class UserMoviesController < ApplicationController
     render 'results'
   end
 
-  # def results_search
-  #   @user = User.find(params[:id])
-  #   require "pry"; binding.pry
-  #   @movies = MovieFacade.new.search(params[:keyword])
-  #   render 'results'
-  # end
+  def results_search
+    @user = User.find(params[:id])
+    @movies = MovieFacade.new.search(params[:keywords])
+    render 'results'
+  end
 
   #^method above, we could not get the params to pass to the controller
 

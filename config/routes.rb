@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/users/:id/discover', to: 'user_movies#discover'
   get '/users/:id/movies', to: 'user_movies#results_top_rated'
-  get '/users/:id/movies/:movie_id', to: 'user_movies#results_search'
+  get '/users/:id/movies/search', to: 'user_movies#results_search'
 
 
   get '/register', to: 'users#new'
